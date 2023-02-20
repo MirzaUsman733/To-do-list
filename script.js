@@ -18,7 +18,7 @@ for (let i = 0; i < close.length; i++) {
 let list = document.querySelector('ul').onclick = (ev) => {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
-  }else{
+  } else {
     false;
   }
 }
@@ -41,10 +41,9 @@ document.getElementById("add").onclick =() => {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function(){
+    close[i].onclick = () => {
       let div = this.parentElement;
       div.style.display = "none";
     }
   }
 }
-
