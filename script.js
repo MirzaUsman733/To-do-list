@@ -22,18 +22,17 @@ let list = document.querySelector('ul').onclick = (ev) => {
     false;
   }
 }
-document.getElementById("add").onclick =() => {
+document.getElementById("add").onclick = () => {
   let li = document.createElement("li");
   let input = document.getElementById("myInput").value;
   let t = document.createTextNode(input);
   li.appendChild(t);
-  if (input === '') {
-    console.log("Please Write something;");
+  if (input === "") {
+    console.log("Please Write something");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
-
   let span = document.createElement("SPAN");
   let txt = document.createTextNode("X");
   span.className = "close";
